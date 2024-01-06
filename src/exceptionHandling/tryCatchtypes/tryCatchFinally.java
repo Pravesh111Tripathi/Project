@@ -1,4 +1,4 @@
-package exceptionHandling;
+package exceptionHandling.tryCatchtypes;
 
 import java.util.Scanner;
 

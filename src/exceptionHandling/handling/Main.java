@@ -1,4 +1,4 @@
-package exceptionHandling;
+package exceptionHandling.handling;
 
 public class Main {
     public static void main(String[] args) {

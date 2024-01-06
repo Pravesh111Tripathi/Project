@@ -1,4 +1,4 @@
-package exceptionHandling;
+package exceptionHandling.creatingOwnFlow;
 
 public class ChangingThreadName {
     public static void method2() {

@@ -1,4 +1,4 @@
-package exceptionHandling;
+package exceptionHandling.handling;
 
 public class HandlingExceptionInParseInt {
     public static void method2() {

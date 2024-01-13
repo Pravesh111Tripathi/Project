@@ -1,4 +1,4 @@
-package exceptionHandling.handling;
+package exceptionHandling;
 
 public class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
 

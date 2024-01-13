@@ -1,4 +1,4 @@
-package exceptionHandling.autoCloseable;
+package exceptionHandling;
 
 import java.io.Closeable;
 import java.io.IOException;

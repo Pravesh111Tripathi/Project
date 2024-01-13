@@ -1,7 +1,7 @@
 package exceptionHandling.tryCatchtypes;
 
-import exceptionHandling.handling.MyScanner;
-import exceptionHandling.autoCloseable.autoCloseable;
+import exceptionHandling.MyScanner;
+import exceptionHandling.autoCloseable;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

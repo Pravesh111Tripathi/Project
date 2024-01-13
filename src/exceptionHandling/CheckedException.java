@@ -1,4 +1,4 @@
-package exceptionHandling.handling;
+package exceptionHandling;
 
 public class CheckedException extends Exception{
 

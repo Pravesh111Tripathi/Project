@@ -1,4 +1,4 @@
-package exceptionHandling.autoCloseable;
+package exceptionHandling;
 
 import java.util.Scanner;
 

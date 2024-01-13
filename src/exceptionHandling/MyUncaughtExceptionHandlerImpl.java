@@ -1,4 +1,4 @@
-package exceptionHandling.creatingOwnFlow;
+package exceptionHandling;
 
 public class MyUncaughtExceptionHandlerImpl implements MyThreadClass.MyUncaughtExceptionHandler{
 

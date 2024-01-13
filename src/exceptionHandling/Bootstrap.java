@@ -1,4 +1,4 @@
-package exceptionHandling.creatingOwnFlow;
+package exceptionHandling;
 
 public class Bootstrap {
     MyThreadClass myThreadClass = new MyThreadClass();

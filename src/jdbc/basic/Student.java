@@ -11,7 +11,7 @@ public class Student extends ConnectionUtils {
 
     public void saveStudent(Student student) throws Exception {
         Connection connection = getConnection();
-        connection.prepareStatement("SELECT * FROM test.student");
+        connection.prepareStatement("SELECT * FROM new_table");
         closeConnection(connection);
     }
 
@@ -23,12 +23,18 @@ public class Student extends ConnectionUtils {
 
     public void getStudents() throws Exception {
         Connection connection = getConnection();
-        PreparedStatement ps = connection.prepareStatement("SELECT * FROM Student");
+        PreparedStatement ps = connection.prepareStatement("SELECT * FROM new_table");
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
+            System.out.print(rs.getString("id"));
+            System.out.print(". ");
             System.out.print(rs.getString("first_name"));
             System.out.print(" ");
-            System.out.println(rs.getString("last_name"));
+            System.out.print(rs.getString("last_name"));
+            System.out.print(" (");
+            System.out.print(rs.getString("gender"));
+            System.out.print(")");
+            System.out.println(" ");
         }
         closeConnection(connection);
     }
@@ -50,7 +56,7 @@ public class Student extends ConnectionUtils {
         String last_name = scanner.next();
         System.out.println("enter gender");
         String gender = scanner.next();
-        String sql = "insert into Student(id,first_name,last_name,gender) values(?,?,?,?)";
+        String sql = "insert into new_table(id,first_name,last_name,gender) values(?,?,?,?)";
         PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
         preparedStatement.setInt(1, id);
         preparedStatement.setString(2, first_name);

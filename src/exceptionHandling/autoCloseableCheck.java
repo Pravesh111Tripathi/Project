@@ -1,7 +1,6 @@
 package exceptionHandling;
 
 import java.util.Scanner;
-
 public class autoCloseableCheck {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
